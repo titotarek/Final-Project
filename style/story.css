@@ -37,7 +37,7 @@
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-	width: calc(33.33% - 20px);
+	width: calc(33.33% - 20px); /* Three cards per row for PC screens */
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -110,34 +110,48 @@ button:hover {
 	transform: translateY(-3px);
 }
 
-/* Responsive Design for Store Page */
-
-/* Tablet Devices (1024px and below) */
-@media (max-width: 1024px) {
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
 	.product-card {
-		width: calc(50% - 20px); /* Two cards per row for tablets */
+		width: calc(33.33% - 20px); /* Three cards per row for larger screens */
 	}
 
 	.store-header h1 {
-		font-size: 2.2em;
+		font-size: 2.5em; /* Larger font size for PC */
 	}
 
 	.store-header p {
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
 }
 
-/* Mobile Devices (768px and below) */
+/* Responsive Design for Tablets and Mobile Devices (<= 768px) */
 @media (max-width: 768px) {
 	.product-card {
 		width: 100%; /* One card per row for mobile */
 	}
 
 	.store-header h1 {
-		font-size: 1.8em;
+		font-size: 1.8em; /* Smaller header for mobile */
 	}
 
 	.store-header p {
 		font-size: 1em;
+	}
+}
+
+/* Responsive Design for Small Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+	.store-header h1 {
+		font-size: 1.6em; /* Further reduce header size for small screens */
+	}
+
+	.store-header p {
+		font-size: 0.9em; /* Smaller paragraph for small devices */
+	}
+
+	.product-card {
+		width: 100%; /* Keep one card per row */
+		padding: 15px; /* Reduce padding for small screens */
 	}
 }

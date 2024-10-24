@@ -26,7 +26,7 @@ main h1 {
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	width: calc(33.33% - 20px);
+	width: calc(33.33% - 20px); /* 3 cards per row for large screens */
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -100,13 +100,18 @@ button:hover {
 	transform: translateY(-2px);
 }
 
-/* Responsive Design for Cards */
-@media (max-width: 1024px) {
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
 	.card {
-		width: calc(50% - 20px); /* 2 cards per row for tablet */
+		width: calc(33.33% - 20px); /* 3 cards per row for larger screens */
+	}
+
+	main h1 {
+		font-size: 2.5em; /* Larger font size for PC screens */
 	}
 }
 
+/* Responsive Design for Tablets and Smartphones (<= 768px) */
 @media (max-width: 768px) {
 	.card {
 		width: 100%; /* 1 card per row for mobile */
@@ -114,5 +119,21 @@ button:hover {
 
 	.card-container {
 		justify-content: center;
+	}
+
+	main h1 {
+		font-size: 2em; /* Smaller font size for mobile */
+	}
+}
+
+/* Responsive Design for Small Smartphones (<= 480px) */
+@media (max-width: 480px) {
+	.card {
+		width: 100%; /* Keep 1 card per row for small devices */
+		padding: 15px; /* Reduce padding for smaller screens */
+	}
+
+	main h1 {
+		font-size: 1.8em; /* Further reduce font size for small devices */
 	}
 }

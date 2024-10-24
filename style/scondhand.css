@@ -203,10 +203,30 @@ button:hover {
 
 /* Responsive Design for Hero, Card, and Safety Guidelines Sections */
 
-/* Tablet Devices (1024px and below) */
-@media (max-width: 1024px) {
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
 	.hero-section-secondhand {
-		height: 350px; /* Reduced height for tablets */
+		height: 450px; /* Default height for PC screens */
+	}
+
+	.hero-content {
+		flex-direction: row; /* Keep content side-by-side */
+	}
+
+	.hero-image-secondhand,
+	.hero-text {
+		width: 50%;
+	}
+
+	.card {
+		width: calc(33.33% - 20px); /* Three cards per row for PC screens */
+	}
+}
+
+/* Tablet and Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+	.hero-section-secondhand {
+		height: 300px; /* Reduced height for smaller screens */
 	}
 
 	.hero-content {
@@ -216,46 +236,11 @@ button:hover {
 
 	.hero-image-secondhand,
 	.hero-text {
-		width: 100%;
-	}
-
-	.hero-text {
-		margin-top: 20px;
+		width: 100%; /* Full width for mobile screens */
 	}
 
 	.card {
-		width: calc(50% - 20px); /* Two cards per row for tablets */
-	}
-
-	.safety-guidelines {
-		padding: 30px 15px; /* Reduce padding for smaller screens */
-	}
-
-	.safety-guidelines h2 {
-		font-size: 1.8em;
-	}
-
-	.safety-guidelines ul li {
-		font-size: 1em;
-	}
-}
-
-/* Mobile Devices (768px and below) */
-@media (max-width: 768px) {
-	.hero-section-secondhand {
-		height: 300px; /* Reduced height for smaller screens */
-	}
-
-	.hero-text h1 {
-		font-size: 1.8em;
-	}
-
-	.hero-text p {
-		font-size: 1em;
-	}
-
-	.card {
-		width: 100%; /* One card per row for mobile */
+		width: 100%; /* One card per row for mobile screens */
 	}
 
 	.safety-guidelines {
@@ -271,7 +256,7 @@ button:hover {
 	}
 }
 
-/* Small Mobile Devices (480px and below) */
+/* Small Mobile Devices (<= 480px) */
 @media (max-width: 480px) {
 	.hero-section-secondhand {
 		height: 250px; /* Further reduced height for small devices */

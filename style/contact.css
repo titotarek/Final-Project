@@ -99,30 +99,31 @@
 	transform: translateY(-3px);
 }
 
-/* Responsive Design for Contact Page */
-
-/* Tablet Devices (1024px and below) */
-@media (max-width: 1024px) {
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
 	.contact-info,
 	.contact-form {
-		padding: 30px 15px; /* Reduce padding for smaller screens */
+		padding: 40px 20px; /* Larger padding for PC screens */
+		max-width: 1000px; /* Increase max width for larger screens */
 	}
 
 	.contact-info h1,
 	.contact-form h2 {
-		font-size: 2.2em; /* Reduce header size for tablets */
+		font-size: 2.5em; /* Larger header size for PCs */
 	}
 
-	.contact-info ul li {
-		font-size: 1em; /* Slightly smaller text for lists */
+	.contact-info ul li,
+	.contact-form input,
+	.contact-form textarea {
+		font-size: 1.2em; /* Larger text and inputs for readability on larger screens */
 	}
 
 	.contact-form button {
-		padding: 12px; /* Reduce button padding for smaller screens */
+		padding: 15px; /* Increase button padding for larger screens */
 	}
 }
 
-/* Mobile Devices (768px and below) */
+/* Responsive Design for Smartphones (<= 768px) */
 @media (max-width: 768px) {
 	.contact-info,
 	.contact-form {
@@ -131,7 +132,7 @@
 
 	.contact-info h1,
 	.contact-form h2 {
-		font-size: 1.8em; /* Reduce header size for mobile */
+		font-size: 1.8em; /* Smaller headers for mobile screens */
 	}
 
 	.contact-info ul li {
@@ -139,29 +140,29 @@
 	}
 
 	.contact-form label {
-		font-size: 0.95em; /* Reduce label font size for mobile */
+		font-size: 0.95em; /* Adjust label font size for smaller screens */
 	}
 
 	.contact-form button {
-		padding: 10px; /* Further reduce button padding */
+		padding: 10px; /* Reduce button padding for smaller screens */
 	}
 }
 
-/* Small Mobile Devices (480px and below) */
+/* Responsive Design for Small Mobile Devices (<= 480px) */
 @media (max-width: 480px) {
 	.contact-info,
 	.contact-form {
-		padding: 15px;
+		padding: 15px; /* Compact padding for small mobile devices */
 	}
 
 	.contact-info h1,
 	.contact-form h2 {
-		font-size: 1.6em; /* Make header more compact for small devices */
+		font-size: 1.6em; /* Compact header size for smaller screens */
 	}
 
 	.contact-info ul li,
 	.contact-form label {
-		font-size: 0.9em;
+		font-size: 0.9em; /* Reduce font size for smaller screens */
 	}
 
 	.contact-form textarea {
@@ -169,7 +170,7 @@
 	}
 
 	.contact-form button {
-		font-size: 0.9em;
-		padding: 8px; /* Compact button padding for small screens */
+		font-size: 0.9em; /* Adjust button font size for small screens */
+		padding: 8px; /* Further reduce button padding */
 	}
 }
