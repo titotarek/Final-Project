@@ -3,17 +3,15 @@
 	margin-top: 150px;
 	position: relative;
 	width: 100%;
-	height: 450px; /* Compact height for Second Hand page */
+	height: 450px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #f0f0f0; /* Light background for differentiation */
-	padding: 20px;
+	background-color: #f0f0f0;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	margin-bottom: 40px;
 }
 
-/* Hero Content Layout */
 .hero-content {
 	display: flex;
 	align-items: center;
@@ -35,26 +33,21 @@
 /* Hero Text Styling for Second Hand Page */
 .hero-text {
 	width: 50%;
-	color: #333; /* Darker text for contrast */
-	background: rgba(
-		255,
-		255,
-		255,
-		0.85
-	); /* Slightly transparent white background */
+	color: #333;
+	background: rgba(255, 255, 255, 0.85);
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero-text h1 {
-	font-size: 2em;
+	font-size: 32px;
 	margin-bottom: 15px;
-	color: #e25555; /* Unique color for hero title */
+	color: #e25555;
 }
 
 .hero-text p {
-	font-size: 1.1em;
+	font-size: 17.6px;
 	margin-bottom: 20px;
 	line-height: 1.6;
 }
@@ -116,7 +109,7 @@
 }
 
 .card h2 {
-	font-size: 1.5em;
+	font-size: 24px;
 	margin-bottom: 10px;
 	color: #333;
 	text-align: center;
@@ -130,13 +123,13 @@
 }
 
 .card ul li {
-	font-size: 1em;
+	font-size: 16px;
 	line-height: 1.6;
 	color: #666;
 }
 
 .price {
-	font-size: 1.3em;
+	font-size: 20.8px;
 	margin-bottom: 20px;
 	text-align: center;
 }
@@ -177,28 +170,28 @@ button:hover {
 	max-width: 800px;
 	margin: 100px auto;
 	text-align: left;
-	background-color: #ffffff; /* White background for clear separation */
-	border-radius: 10px; /* Rounded corners for softer edges */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-	border: 1px solid #e0e0e0; /* Light border for emphasis */
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e0e0e0;
 }
 
 .safety-guidelines h2 {
-	font-size: 2em;
+	font-size: 32px;
 	margin-bottom: 20px;
-	color: #e25555; /* Highlighted color to draw attention */
+	color: #e25555;
 }
 
 .safety-guidelines ul {
-	list-style: disc; /* Bullet points for easy readability */
-	padding-left: 20px; /* Padding to indent list */
+	list-style: disc;
+	padding-left: 20px;
 }
 
 .safety-guidelines ul li {
-	font-size: 1.1em;
-	line-height: 1.8; /* Increased line height for better readability */
-	color: #666; /* Soft text color for a balanced look */
-	margin-bottom: 10px; /* Space between each list item */
+	font-size: 17.6px;
+	line-height: 1.8;
+	color: #666;
+	margin-bottom: 10px;
 }
 
 /* Responsive Design for Hero, Card, and Safety Guidelines Sections */
@@ -206,11 +199,11 @@ button:hover {
 /* Responsive Design for PCs (> 768px) */
 @media (min-width: 769px) {
 	.hero-section-secondhand {
-		height: 450px; /* Default height for PC screens */
+		height: 450px;
 	}
 
 	.hero-content {
-		flex-direction: row; /* Keep content side-by-side */
+		flex-direction: row;
 	}
 
 	.hero-image-secondhand,
@@ -219,28 +212,28 @@ button:hover {
 	}
 
 	.card {
-		width: calc(33.33% - 20px); /* Three cards per row for PC screens */
+		width: calc(33.33% - 20px);
 	}
 }
 
 /* Tablet and Mobile Devices (<= 768px) */
 @media (max-width: 768px) {
 	.hero-section-secondhand {
-		height: 300px; /* Reduced height for smaller screens */
+		height: 300px;
 	}
 
 	.hero-content {
-		flex-direction: column; /* Stack image and text vertically */
+		flex-direction: column;
 		text-align: center;
 	}
 
 	.hero-image-secondhand,
 	.hero-text {
-		width: 100%; /* Full width for mobile screens */
+		width: 100%;
 	}
 
 	.card {
-		width: 100%; /* One card per row for mobile screens */
+		width: 100%;
 	}
 
 	.safety-guidelines {
@@ -248,26 +241,26 @@ button:hover {
 	}
 
 	.safety-guidelines h2 {
-		font-size: 1.6em;
+		font-size: 25.6px;
 	}
 
 	.safety-guidelines ul li {
-		font-size: 0.95em;
+		font-size: 15.2px;
 	}
 }
 
 /* Small Mobile Devices (<= 480px) */
 @media (max-width: 480px) {
 	.hero-section-secondhand {
-		height: 250px; /* Further reduced height for small devices */
+		height: 250px;
 	}
 
 	.hero-text h1 {
-		font-size: 1.6em;
+		font-size: 25.6px;
 	}
 
 	.hero-text p {
-		font-size: 0.9em;
+		font-size: 14.4px;
 	}
 
 	.safety-guidelines {
@@ -275,10 +268,10 @@ button:hover {
 	}
 
 	.safety-guidelines h2 {
-		font-size: 1.4em;
+		font-size: 22.4px;
 	}
 
 	.safety-guidelines ul li {
-		font-size: 0.9em;
+		font-size: 14.4px;
 	}
 }

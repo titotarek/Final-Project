@@ -26,12 +26,12 @@
 }
 
 .hero-text h1 {
-	font-size: 3em;
+	font-size: 48px;
 	margin-bottom: 10px;
 }
 
 .hero-text p {
-	font-size: 1.2em;
+	font-size: 19.2px;
 }
 
 /* Info Section Styling (Text on Left, Image on Right) */
@@ -50,13 +50,13 @@
 }
 
 .info-text h2 {
-	font-size: 2em;
+	font-size: 32px;
 	color: #333;
 	margin-bottom: 15px;
 }
 
 .info-text p {
-	font-size: 1em;
+	font-size: 16px;
 	color: #666;
 }
 
@@ -70,62 +70,62 @@
 /* Responsive Design for PCs (> 768px) */
 @media (min-width: 769px) {
 	.hero-text h1 {
-		font-size: 3em; /* Larger text for PCs */
+		font-size: 48px; /* Larger text for PCs */
 	}
 
 	.hero-text p {
-		font-size: 1.2em; /* Larger text for PCs */
+		font-size: 19.2px;
 	}
 
 	.info-section {
-		flex-direction: row; /* Keep text and image side-by-side */
+		flex-direction: row;
 		text-align: left;
 	}
 
 	.info-image {
-		max-width: 500px; /* Maintain image size for PCs */
+		max-width: 500px;
 	}
 }
 
 /* Responsive Design for Smartphones (<= 768px) */
 @media (max-width: 768px) {
 	.hero-text h1 {
-		font-size: 2em; /* Reduce text size for smaller screens */
+		font-size: 32px; /* Reduce text size for smaller screens */
 	}
 
 	.hero-text p {
-		font-size: 1em; /* Smaller paragraph text for mobile */
+		font-size: 16px;
 	}
 
 	.info-section {
-		flex-direction: column; /* Stack text and image */
-		text-align: center; /* Center text for smaller screens */
+		flex-direction: column;
+		text-align: center;
 	}
 
 	.info-image {
-		max-width: 100%; /* Allow the image to take full width */
+		max-width: 100%;
 	}
 }
 
 /* Responsive Design for Small Mobile Devices (<= 480px) */
 @media (max-width: 480px) {
 	.hero-section {
-		height: 400px; /* Reduce hero section height */
+		height: 400px;
 	}
 
 	.hero-text h1 {
-		font-size: 1.6em; /* Further reduce text size */
+		font-size: 25.6px;
 	}
 
 	.hero-text p {
-		font-size: 0.9em; /* Adjust paragraph font size */
+		font-size: 14.4px; /* Adjust paragraph font size */
 	}
 
 	.info-text h2 {
-		font-size: 1.6em; /* Smaller heading size for small devices */
+		font-size: 25.6px;
 	}
 
 	.info-text p {
-		font-size: 0.9em; /* Smaller paragraph text */
+		font-size: 14.4px;
 	}
 }
