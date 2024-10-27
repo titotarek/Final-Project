@@ -4,24 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
-			content="Contact Bike Shop - Get in touch with us for inquiries or support"
+			content="About Bike Shop - Learn more about our services and team"
 		/>
 		<meta
 			name="keywords"
-			content="contact, bike shop, support, inquiries, services"
+			content="about us, bike shop, team, services, quality"
 		/>
 		<meta name="author" content="Tarek" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contact Us - Bike Shop</title>
 		<!-- Favicon for the website -->
 		<link
-			rel="shortcut icon"
+			rel="icon"
 			href="https://cdn-icons-png.flaticon.com/512/2972/2972185.png"
-			type="image/x-icon"
+			type="image/png"
 		/>
-		<!-- Add type attribute to stylesheets for excellent criteria -->
-		<link rel="stylesheet" href="./style/global.css" type="text/css" />
-		<link rel="stylesheet" href="./style/contact.css" type="text/css" />
+		<link rel="stylesheet" href="./css/style.css" type="text/css" />
 	</head>
 	<body>
 		<!-- Header section with navigation links -->
@@ -62,22 +60,44 @@
 			<!-- Contact Form Section -->
 			<section class="contact-form">
 				<h2>Send Us a Message</h2>
-				<!-- Add legend element to meet advanced HTML criteria -->
 				<form action="#" method="post">
 					<legend>Contact Us Form</legend>
 					<label for="name">Full Name:</label>
-					<input type="text" id="name" name="name" required />
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Your Full Name"
+						required
+					/>
 
 					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required />
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Your Email Address"
+						required
+					/>
 
 					<label for="subject">Subject:</label>
-					<input type="text" id="subject" name="subject" />
+					<input
+						type="text"
+						id="subject"
+						name="subject"
+						placeholder="Message Subject"
+					/>
 
 					<label for="message">Message:</label>
-					<textarea id="message" name="message" rows="6" required></textarea>
+					<textarea
+						id="message"
+						name="message"
+						rows="6"
+						placeholder="Your Message Here"
+						required
+					></textarea>
 
-					<button type="submit">Submit</button>
+					<button type="submit" value="submit">Submit</button>
 				</form>
 			</section>
 		</main>

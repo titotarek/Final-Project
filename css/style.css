@@ -1,0 +1,1240 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML and Body General Rules */
+html,
+body {
+	height: 100%;
+	width: 100%;
+	line-height: 1.6;
+	background-color: #f5f5f5;
+	font-family: "Roboto", system-ui;
+	font-weight: 100;
+	font-style: normal;
+	scroll-behavior: smooth;
+}
+
+/* Removing List Styles */
+ul,
+ol {
+	list-style: none;
+}
+
+/* Anchor Links Reset */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Button Reset */
+button {
+	padding: 0;
+	border: none;
+	background: none;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+/* Utility Classes */
+
+/* Flexbox Utility */
+.flex {
+	display: flex;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* General Container for Consistent Width */
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Text Utility Classes */
+.text-center {
+	text-align: center;
+}
+
+/* General Padding and Margin Utility */
+.p-10 {
+	padding: 10px;
+}
+
+.m-10 {
+	margin: 10px;
+}
+
+/* Header Navigation Styling */
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+header nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+header nav ul li {
+	margin: 0 20px;
+}
+
+header nav ul li a {
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 15px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+	background-color: #e25555;
+	border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+	background-color: #333;
+	color: white;
+	padding: 40px 20px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-links {
+	margin-bottom: 20px;
+}
+
+.footer-links a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 15px;
+	transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+	color: #e25555;
+}
+
+footer p {
+	font-size: 1.1rem;
+}
+
+footer .heart {
+	color: #e25555;
+	animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+/* General Button Styling */
+button,
+.cta-button {
+	background-color: #e25555;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.cta-button:hover {
+	background-color: #d14444;
+	transform: translateY(-2px);
+}
+
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	header nav ul {
+		flex-direction: row;
+		padding: 15px;
+	}
+
+	header nav ul li {
+		margin: 0 20px;
+	}
+
+	.flex-row {
+		flex-direction: row;
+	}
+}
+
+/* Responsive Design for Smartphones (<= 768px) */
+@media (max-width: 768px) {
+	header nav ul {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	header nav ul li {
+		margin: 10px 0;
+	}
+
+	.flex-column {
+		flex-direction: column;
+	}
+
+	.container {
+		width: 95%;
+	}
+}
+
+/* Responsive Utility for Small Smartphones (<= 480px) */
+@media (max-width: 480px) {
+	footer {
+		padding: 30px 10px;
+	}
+
+	footer p {
+		font-size: 1.3rem;
+	}
+}
+
+/* General Styling for the About Us Page */
+.about-intro,
+.mission,
+.values,
+.team {
+	padding: 40px 20px;
+	max-width: 800px;
+	margin: 100px auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-intro h1,
+.mission h2,
+.values h2,
+.team h2 {
+	color: #e25555;
+	font-size: 4rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.about-intro p,
+.mission p,
+.team p {
+	font-size: 1.9rem;
+	line-height: 1.6;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+.values ul,
+.team ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.values ul li,
+.team ul li {
+	font-size: 1.7rem;
+	line-height: 1.8;
+	color: #666;
+	margin-bottom: 15px;
+}
+
+.values ul li strong,
+.team ul li strong {
+	color: #333;
+}
+
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
+	.about-intro,
+	.mission,
+	.values,
+	.team {
+		padding: 40px 20px;
+		max-width: 1000px;
+	}
+
+	.about-intro h1,
+	.mission h2,
+	.values h2,
+	.team h2 {
+		font-size: 4.8rem;
+	}
+
+	.about-intro p,
+	.mission p,
+	.team p {
+		font-size: 2rem;
+	}
+}
+
+/* Responsive Design for Smartphones (<= 768px) */
+@media (max-width: 768px) {
+	.about-intro,
+	.mission,
+	.values,
+	.team {
+		padding: 20px;
+		margin: 50px auto;
+	}
+
+	.about-intro h1,
+	.mission h2,
+	.values h2,
+	.team h2 {
+		font-size: 2.8rem;
+	}
+
+	.about-intro p,
+	.mission p,
+	.team p,
+	.values ul li,
+	.team ul li {
+		font-size: 1.5rem;
+	}
+}
+
+/* Responsive Design for Small Smartphones (<= 480px) */
+@media (max-width: 480px) {
+	.about-intro,
+	.mission,
+	.values,
+	.team {
+		padding: 15px;
+		margin: 30px auto;
+	}
+
+	.about-intro h1,
+	.mission h2,
+	.values h2,
+	.team h2 {
+		font-size: 2.5rem;
+	}
+
+	.about-intro p,
+	.mission p,
+	.team p,
+	.values ul li,
+	.team ul li {
+		font-size: 1.4rem;
+	}
+}
+
+/* Contact Information Section */
+.contact-info {
+	padding: 40px 20px;
+	max-width: 800px;
+	margin: 100px auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+
+.contact-info h1 {
+	font-size: 4rem;
+	color: #333;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.contact-info p {
+	font-size: 1.9rem;
+	line-height: 1.6;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+.contact-info ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.contact-info ul li {
+	font-size: 1.7rem;
+	line-height: 1.8;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+/* Contact Form Section */
+.contact-form {
+	padding: 40px 20px;
+	max-width: 800px;
+	margin: 40px auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+	/* font-size: 3.2rem; */
+	color: #333;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.contact-form label {
+	font-weight: bold;
+	display: block;
+	margin-top: 15px;
+	color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1.6rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+	height: 60px;
+}
+
+.contact-form textarea {
+	resize: vertical;
+	height: 150px;
+}
+
+.contact-form button {
+	display: block;
+	width: 100%;
+	background-color: #e25555;
+	color: white;
+	padding: 15px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	font-size: 1.6rem;
+}
+
+.contact-form button:hover {
+	background-color: #d14444;
+	transform: translateY(-3px);
+}
+
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
+	.contact-info,
+	.contact-form {
+		padding: 40px 20px;
+		max-width: 1000px;
+	}
+
+	.contact-info h1,
+	.contact-form h2 {
+		font-size: 4rem;
+	}
+
+	.contact-info ul li,
+	.contact-form input,
+	.contact-form textarea {
+		font-size: 1.2rem; /* Larger text and inputs for readability on larger screens */
+	}
+
+	.contact-form button {
+		padding: 15px;
+	}
+}
+
+/* Responsive Design for Smartphones (<= 768px) */
+@media (max-width: 768px) {
+	.contact-info,
+	.contact-form {
+		padding: 20px;
+	}
+
+	.contact-info h1,
+	.contact-form h2 {
+		font-size: 2.9rem;
+	}
+
+	.contact-info ul li {
+		font-size: 1.5rem;
+	}
+
+	.contact-form label {
+		font-size: 1.5rem;
+	}
+
+	.contact-form button {
+		padding: 10px;
+	}
+}
+
+/* Responsive Design for Small Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+	.contact-info,
+	.contact-form {
+		padding: 15px;
+	}
+
+	.contact-info h1,
+	.contact-form h2 {
+		font-size: 2.5rem;
+	}
+
+	.contact-info ul li,
+	.contact-form label {
+		font-size: 1.4rem;
+	}
+
+	.contact-form textarea {
+		height: 100px;
+	}
+
+	.contact-form button {
+		font-size: 1.4rem;
+		padding: 8px;
+	}
+}
+
+/* Hero home Styling */
+.hero-section {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(70%);
+}
+
+.hero-text {
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.hero-text h1 {
+	font-size: 4.8rem;
+	margin-bottom: 10px;
+}
+
+.hero-text p {
+	font-size: 1.9rem;
+}
+
+/* Info Section Styling (Text on Left, Image on Right) */
+.info-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px 20px;
+	max-width: 1200px;
+	margin: 40px auto;
+	gap: 20px;
+}
+
+.info-text {
+	flex: 1;
+}
+
+.info-text h2 {
+	font-size: 3.2rem;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+.info-text p {
+	font-size: 1.6rem;
+	color: #666;
+}
+
+.info-image {
+	flex: 1;
+	max-width: 500px;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
+	.hero-text h1 {
+		font-size: 4.8rem; /* Larger text for PCs */
+	}
+
+	.hero-text p {
+		font-size: 1.9rem;
+	}
+
+	.info-section {
+		flex-direction: row;
+		text-align: left;
+	}
+
+	.info-image {
+		max-width: 500px;
+	}
+}
+
+/* Responsive Design for Smartphones (<= 768px) */
+@media (max-width: 768px) {
+	.hero-text h1 {
+		font-size: 3.2rem; /* Reduce text size for smaller screens */
+	}
+
+	.hero-text p {
+		font-size: 1.6rem;
+	}
+
+	.info-section {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.info-image {
+		max-width: 100%;
+	}
+}
+
+/* Responsive Design for Small Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+	.hero-section {
+		height: 400px;
+	}
+
+	.hero-text h1 {
+		font-size: 2.5rem;
+	}
+
+	.hero-text p {
+		font-size: 1.4rem; /* Adjust paragraph font size */
+	}
+
+	.info-text h2 {
+		font-size: 2.5rem;
+	}
+
+	.info-text p {
+		font-size: 1.4rem;
+	}
+}
+
+/* Main offers Styling */
+main {
+	padding: 40px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+main h1 {
+	font-size: 4rem;
+	margin: 50px 0px;
+	color: #333;
+}
+
+/* General Styling for the Card Container */
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: calc(33.33% - 20px);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.card h2 {
+	font-size: 2.4rem;
+	margin-bottom: 10px;
+	color: #333;
+	text-align: center;
+}
+
+.card ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.card ul li {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: #666;
+}
+
+.price {
+	font-size: 2.8rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.current-price {
+	color: #e25555;
+	font-weight: bold;
+}
+
+.old-price {
+	text-decoration: line-through;
+	color: #999;
+	margin-left: 10px;
+}
+
+/* Footer Section for Card Buttons */
+.card-footer {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	justify-content: space-around;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+	background-color: #555;
+	transform: translateY(-2px);
+}
+
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
+	.card {
+		width: calc(33.33% - 20px);
+	}
+
+	main h1 {
+		font-size: 4rem;
+	}
+}
+
+/* Responsive Design for Tablets and Smartphones (<= 768px) */
+@media (max-width: 768px) {
+	.card {
+		width: 100%;
+	}
+
+	.card-container {
+		justify-content: center;
+	}
+
+	main h1 {
+		font-size: 3.2rem; /* Smaller font size for mobile */
+	}
+}
+
+/* Responsive Design for Small Smartphones (<= 480px) */
+@media (max-width: 480px) {
+	.card {
+		width: 100%;
+		padding: 15px;
+	}
+
+	main h1 {
+		font-size: 2.8rem;
+	}
+}
+
+/* Hero Section Styling for Second Hand Page */
+.hero-section-secondhand {
+	margin-top: 150px;
+	position: relative;
+	width: 100%;
+	height: 450px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f0f0f0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	margin-bottom: 40px;
+}
+
+.hero-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	gap: 20px;
+}
+
+/* Hero Image Styling for Second Hand Page */
+.hero-image-secondhand {
+	width: 50%;
+	max-height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Text Styling for Second Hand Page */
+.hero-text {
+	width: 50%;
+	color: #333;
+	background: rgba(255, 255, 255, 0.85);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text h1 {
+	font-size: 3.2rem;
+	margin-bottom: 15px;
+	color: #e25555;
+}
+
+.hero-text p {
+	font-size: 1.7rem;
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+
+.cta-button {
+	background-color: #e25555;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+	background-color: #d14444;
+	transform: translateY(-3px);
+}
+
+/* Styling for Card Container and Card Images */
+.card-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 40px 20px;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Card Styling */
+.card {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	width: calc(33.33% - 20px);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling - Specific for Card */
+.card img {
+	width: 80%;
+	max-width: 200px;
+	height: auto;
+	object-fit: contain;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+	font-size: 2.4rem;
+	margin-bottom: 10px;
+	color: #333;
+	text-align: center;
+}
+
+.card ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.card ul li {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: #666;
+}
+
+.price {
+	font-size: 2.8rem;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.current-price {
+	color: #e25555;
+	font-weight: bold;
+}
+
+/* Footer Section for Card Buttons */
+.card-footer {
+	display: flex;
+	gap: 15px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+/* Button Styling */
+button {
+	background-color: #e25555;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+	background-color: #c14444;
+	transform: translateY(-3px);
+}
+
+/* Safety Guidelines Section Styling */
+.safety-guidelines {
+	padding: 40px 20px;
+	max-width: 800px;
+	margin: 100px auto;
+	text-align: left;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #e0e0e0;
+}
+
+.safety-guidelines h2 {
+	font-size: 3.2rem;
+	margin-bottom: 20px;
+	color: #e25555;
+}
+
+.safety-guidelines ul {
+	list-style: disc;
+	padding-left: 20px;
+}
+
+.safety-guidelines ul li {
+	font-size: 1.7rem;
+	line-height: 1.8;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+/* Responsive Design for Hero, Card, and Safety Guidelines Sections */
+
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
+	.hero-section-secondhand {
+		height: 450px;
+	}
+
+	.hero-content {
+		flex-direction: row;
+	}
+
+	.hero-image-secondhand,
+	.hero-text {
+		width: 50%;
+	}
+
+	.card {
+		width: calc(33.33% - 20px);
+	}
+}
+
+/* Tablet and Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+	.hero-section-secondhand {
+		height: 300px;
+	}
+
+	.hero-content {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.hero-image-secondhand,
+	.hero-text {
+		width: 100%;
+	}
+
+	.card {
+		width: 100%;
+	}
+
+	.safety-guidelines {
+		padding: 20px;
+	}
+
+	.safety-guidelines h2 {
+		font-size: 2.5rem;
+	}
+
+	.safety-guidelines ul li {
+		font-size: 1.5rem;
+	}
+}
+
+/* Small Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+	.hero-section-secondhand {
+		height: 250px;
+	}
+
+	.hero-text h1 {
+		font-size: 2.5rem;
+	}
+
+	.hero-text p {
+		font-size: 1.4rem;
+	}
+
+	.safety-guidelines {
+		padding: 15px;
+	}
+
+	.safety-guidelines h2 {
+		font-size: 2.3rem;
+	}
+
+	.safety-guidelines ul li {
+		font-size: 1.4rem;
+	}
+}
+
+/* Store Header Section */
+.store-header {
+	padding: 40px 20px;
+	max-width: 800px;
+	margin: 150px auto;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.store-header h1 {
+	font-size: 4rem;
+	color: #e25555;
+	margin-bottom: 15px;
+}
+
+.store-header p {
+	font-size: 1.9rem;
+	color: #555;
+	line-height: 1.6;
+}
+
+.product-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 40px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.product-card {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	width: calc(33.33% - 20px);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	text-align: center;
+}
+
+.product-card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+	width: 80%;
+	max-width: 220px;
+	height: auto;
+	object-fit: contain;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h2 {
+	font-size: 2.4rem;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.product-card ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.product-card ul li {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: #666;
+}
+
+.price {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: #e25555;
+}
+
+.card-footer {
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	width: 100%;
+}
+
+button {
+	background-color: #e25555;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+	background-color: #c14444;
+	transform: translateY(-3px);
+}
+
+/* Responsive Design for PCs (> 768px) */
+@media (min-width: 769px) {
+	.product-card {
+		width: calc(33.33% - 20px);
+	}
+
+	.store-header h1 {
+		font-size: 4rem;
+	}
+
+	.store-header p {
+		font-size: 1.9rem;
+	}
+}
+
+/* Responsive Design for Tablets and Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+	.product-card {
+		width: 100%;
+	}
+
+	.store-header h1 {
+		font-size: 2.8rem;
+	}
+
+	.store-header p {
+		font-size: 1.6rem;
+	}
+}
+
+/* Responsive Design for Small Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+	.store-header h1 {
+		font-size: 2.5rem;
+	}
+
+	.store-header p {
+		font-size: 1.4rem;
+	}
+
+	.product-card {
+		width: 100%;
+		padding: 15px;
+	}
+}
