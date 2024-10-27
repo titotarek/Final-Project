@@ -1,0 +1,9 @@
+Student name: Tarek Abdalla
+
+Student number: 720365
+
+Student class: 1E
+
+GitHub Repository: https://github.com/titotarek/Final-Project.git
+
+GitHub Pages URL: https://titotarek.github.io/Final-Project/
