@@ -1274,3 +1274,47 @@ button:hover {
 		padding: 15px;
 	}
 }
+
+
+/* --- Added for Grading Requirements --- */
+
+/* Add letter-spacing for readability */
+h1, h2, h3, p {
+    letter-spacing: 1px; /* Improved readability */
+}
+
+/* Add text-indent for paragraphs */
+p {
+    text-indent: 2em; /* Indentation for paragraphs */
+}
+
+/* Add word-spacing for headers */
+h1, h2, h3 {
+    word-spacing: 2px; /* Extra spacing between words */
+}
+
+/* Text transformation for uppercase headers */
+.nav-item, .header-title {
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+/* Table styles with nth-child selector */
+table tr:nth-child(even) {
+    background-color: #CFF; /* Light blue for even rows */
+}
+
+table tr:nth-child(odd) {
+    background-color: #FFF; /* White for odd rows */
+}
+
+/* Add first-letter styling */
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Direct child selector example */
+.header > .title {
+    color: #333; /* Darker title color */
+}
+
